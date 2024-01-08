@@ -13,6 +13,42 @@ $b: #002529;
 $wa: rgba(255, 255, 255, 0.5);
 $ba: rgba(0, 0, 0, 0.5);
 
+// 🔴Main
+body {
+  font-family: "Livvic", sans-serif;
+  color: $w;
+  background-color: $midnightGreen;
+}
+a:hover {
+  color: $lightCoral;
+}
+
+// 🔴Texts sizes
+h1 {
+  font-family: Livvic;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+h2 {
+  font-family: Livvic;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+h3 {
+  font-family: Livvic;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+p {
+  font-family: Livvic;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
 // 🔴Buttons
 %button {
   font-size: 1rem;
@@ -61,36 +97,16 @@ $ba: rgba(0, 0, 0, 0.5);
   }
 }
 
-body {
-  font-family: "Livvic", sans-serif;
-  color: $w;
-  background-color: $midnightGreen;
+// 🔴Lines
+%line {
+  width: 3.5rem;
+  border-bottom: solid 0.4rem;
 }
-a:hover {
-  color: $lightCoral;
+.lineBlue {
+  @extend %line;
+  border-color: $raptureBlue;
 }
-
-h1 {
-  font-family: Livvic;
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 3.5rem;
-}
-h2 {
-  font-family: Livvic;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 2rem;
-}
-h3 {
-  font-family: Livvic;
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-}
-p {
-  font-family: Livvic;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5rem;
+.linePink {
+  @extend %line;
+  border-color: $lightCoral;
 }

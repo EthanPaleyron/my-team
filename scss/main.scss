@@ -24,7 +24,7 @@ header {
       background-color: $ba;
       justify-content: end;
       div {
-        width: 60%;
+        width: 70%;
         background-color: $midnightGreen;
         padding: 2.5rem 1.5rem 2.5rem 3.5rem;
         background-image: url("../assets/bg-pattern/about/bg-pattern-about-1-mobile-nav-1.svg");
@@ -61,8 +61,12 @@ header {
         color: $lightCoral;
       }
     }
-    .line {
+    .lineBlue,
+    .linePink {
       display: none;
+    }
+    h3 {
+      color: $lightCoral;
     }
   }
 }
@@ -166,23 +170,15 @@ footer {
       margin: 4rem;
       text-align: start;
       justify-content: space-between;
+      align-items: start;
       flex-direction: row;
       img {
-        // display: block;
+        display: block;
       }
-      %line {
+      .lineBlue,
+      .linePink {
         display: block;
         margin-bottom: 5.5rem;
-        width: 3rem;
-        border-bottom: solid;
-      }
-      .lineBlue {
-        @extend %line;
-        border-color: $raptureBlue;
-      }
-      .linePink {
-        @extend %line;
-        border-color: $lightCoral;
       }
     }
   }
