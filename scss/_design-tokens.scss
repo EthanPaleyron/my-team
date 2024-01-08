@@ -9,14 +9,65 @@ $raptureBlue: #79c8c7;
 $policeBlue: #2c6269;
 $deepJungleGreen: #004047;
 $sacramentoStateGreen: #012f34;
-$darkGreen: #002529;
-$b: #000;
+$b: #002529;
 $wa: rgba(255, 255, 255, 0.5);
 $ba: rgba(0, 0, 0, 0.5);
 
-body {
+// 🔴Buttons
+%button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+.stateLightPrimary {
+  @extend %button;
   color: $w;
+  border: solid $w;
+  &:hover {
+    color: $b;
+    background-color: $w;
+  }
+  &:active {
+    color: $w;
+    background-color: transparent;
+    opacity: 0.4;
+  }
+}
+.stateLightSecondary {
+  @extend %button;
+  border: solid $w;
+  &:hover {
+    color: $b;
+    background-color: $raptureBlue;
+    border: solid $raptureBlue;
+  }
+  &:active {
+    opacity: 0.4;
+  }
+}
+.stateDark {
+  @extend %button;
+  color: $b;
+  border: solid $b;
+  &:hover {
+    color: $w;
+    background-color: $b;
+  }
+  &:active {
+    color: $b;
+    background-color: transparent;
+    opacity: 0.4;
+  }
+}
+
+body {
   font-family: "Livvic", sans-serif;
+  color: $w;
+  background-color: $midnightGreen;
+}
+a:hover {
+  color: $lightCoral;
 }
 
 h1 {

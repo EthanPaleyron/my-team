@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <link rel="stylesheet" href="/scss/main.scss">
@@ -18,21 +18,66 @@
   <header>
     <nav>
       <a><img src="assets/logo/logo.svg" alt="logo"></a>
-      <button><img src="assets/icon/icon-hamburger.svg" alt="menu hamburger"></button>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
+      <ul class="link_tablet_desktop">
+        <li>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+          </ul>
+        </li>
+        <li><a class="stateLightSecondary" href="#">contact us</a></li>
       </ul>
+      <button id="openMenuBurger"><img src="assets/icon/icon-hamburger.svg" alt="open menu burger"></button>
+      <aside id="menuBurger">
+        <div>
+          <button id="closeMenuBurger"><img src="assets/icon/icon-close.svg" alt="close menu burger"></button>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="pages/about.html">about</a></li>
+            <li><a class="stateLightSecondary" href="#">contact us</a></li>
+          </ul>
+        </div>
+      </aside>
     </nav>
-    <div>
+    <div class="header">
+      <img src="assets/bg-pattern/home/bg-pattern-home-1.svg" alt="bg pattern">
       <h1>Find the best <span>talent</span></h1>
-      <p>Finding the right people and building high performing teams can be hard. Most companies aren't tapping into the
-        abundance of global talent. We're about to change that.</p>
+      <div>
+        <div class="lineBlue"></div>
+        <p>Finding the right people and building high performing teams can be hard. Most companies aren't tapping into
+          the abundance of global talent. We're about to change that.</p>
+      </div>
     </div>
-    <img src="assets/bg-pattern/home/bg-pattern-home-2.svg" alt="bg pattern">
   </header>
+  <div class="bg_pattern_home">
+    <img src="assets/bg-pattern/home/bg-pattern-home-2.svg" alt="bg pattern">
+  </div>
 
-  <script type="module" src="/js/main.js"></script>
+  <footer>
+    <div>
+      <div class="logo_other_pages">
+        <img src="assets/logo/logo.svg" alt="logo">
+        <ul class="other_pages_footer">
+          <li><a href="index.html">home</a></li>
+          <li><a href="pages/about.html">about</a></li>
+        </ul>
+      </div>
+      <p>987 Hillcrest Lane
+        Irvine, CA
+        California 92714
+        Call Us : 949-833-7432</p>
+    </div>
+    <div>
+      <ul class="reseaux">
+        <li><a href="#"><img src="assets/icon/icon-facebook.svg" alt="Facebook"></a></li>
+        <li><a href="#"><img src="assets/icon/icon-pinterest.svg" alt="Pinterest"></a></li>
+        <li><a href="#"><img src="assets/icon/icon-twitter.svg" alt="Twitter"></a></li>
+      </ul>
+      <p class="copyright">Copyright 2020. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/menu-burger.js"></script>
 </body>
 
 </html>
