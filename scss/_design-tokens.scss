@@ -21,6 +21,12 @@ body {
 }
 
 // 🔴Texts sizes
+body {
+  font-family: Livvic;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
 h1 {
   font-family: Livvic;
   font-size: 3rem;
@@ -37,12 +43,6 @@ h3 {
   font-family: Livvic;
   font-size: 1.1rem;
   font-weight: 700;
-  line-height: 1.5rem;
-}
-p {
-  font-family: Livvic;
-  font-size: 1rem;
-  font-weight: 600;
   line-height: 1.5rem;
 }
 @include responsive(768px) {
@@ -66,9 +66,11 @@ p {
 a:hover {
   color: $lightCoral;
 }
+.link:hover {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(29%) saturate(1865%)
+    hue-rotate(304deg) brightness(95%) contrast(103%);
+}
 %button {
-  font-size: 1rem;
-  font-weight: bold;
   padding: 1rem 2rem;
   border-radius: 3rem;
 }
@@ -125,4 +127,14 @@ a:hover {
 .linePink {
   @extend %line;
   border-color: $lightCoral;
+}
+
+// 🔴Buttons info
+%button_info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 1.7rem);
+  padding: 1.3rem;
+  border-radius: 50%;
 }

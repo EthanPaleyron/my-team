@@ -1,0 +1,134 @@
+.header_about {
+  padding-bottom: 3rem;
+  background-image: url("../assets/bg-pattern/bg-pattern-about-1-mobile-nav-1.svg");
+  background-position: bottom -100px right -100px;
+}
+
+main.about {
+  .directors {
+    text-align: center;
+    background-color: $deepJungleGreen;
+    padding: 10rem 1.5rem;
+    background-image: url("../assets/bg-pattern/about/bg-pattern-about-2-contact-1.svg"),
+      url("../assets/bg-pattern/home/bg-pattern-home-4-about-3.svg");
+    background-position: top left -100px, bottom right;
+    h2 {
+      margin-bottom: 2.5rem;
+    }
+    .articles_directors {
+      display: grid;
+      grid-template-areas: "a";
+      justify-content: center;
+      gap: 3.5rem 0.5rem;
+      article {
+        position: relative;
+        width: 20rem;
+        height: 14.5rem;
+        %content_directors {
+          padding: 2rem 3rem 3.5rem;
+          @extend %flex-center;
+          flex-direction: column;
+        }
+        .content_directors {
+          background-color: $sacramentoStateGreen;
+          @extend %content_directors;
+          gap: 0.5rem;
+        }
+        .more_content_directors {
+          display: none;
+          background-color: $b;
+          @extend %content_directors;
+          gap: 1.5rem;
+          ul {
+            @extend %flex-center;
+            gap: 1rem;
+          }
+        }
+        .profil {
+          width: 5rem;
+          border-radius: 50%;
+          border: solid $w;
+        }
+        h3 {
+          color: $raptureBlue;
+        }
+        em {
+          font-style: italic;
+        }
+        .more_info {
+          @extend %button_info;
+          background-color: $lightCoral;
+          &:hover {
+            background-color: $raptureBlue;
+          }
+        }
+        .close_info {
+          @extend %button_info;
+          background-color: $raptureBlue;
+          &:hover {
+            background-color: $lightCoral;
+          }
+        }
+      }
+    }
+  }
+
+  .clients {
+    text-align: center;
+    background-color: $sacramentoStateGreen;
+    padding: 5rem;
+    background-image: url("../assets/bg-pattern/about/bg-pattern-about-4.svg");
+    background-position: top -100px left -100px;
+    h2 {
+      margin-bottom: 4rem;
+    }
+    ul {
+      @extend %flex-center;
+      flex-direction: column;
+      gap: 3rem;
+      li img {
+        width: 15rem;
+      }
+    }
+  }
+}
+
+@include responsive(768px) {
+  main.about {
+    .directors {
+      .articles_directors {
+        grid-template-areas: "a a";
+      }
+    }
+    .clients {
+      padding: 8rem 5rem;
+      background-position: top -100px left;
+      ul {
+        flex-direction: row;
+        li img {
+          width: 20rem;
+        }
+      }
+    }
+  }
+}
+
+@include responsive(1040px) {
+  main.about {
+    .directors {
+      .articles_directors {
+        grid-template-areas: "a a a";
+        gap: 3.5rem 1.5rem;
+      }
+    }
+    .clients {
+      padding: 10rem 6rem;
+      background-position: top left;
+      ul {
+        li img {
+          width: 20rem;
+        }
+      }
+    }
+  }
+}

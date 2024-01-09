@@ -8,13 +8,13 @@
     <!-- <meta name="description" content="Description de votre projet"> -->
     <!-- <meta name="keywords" content="Mots-clés pertinents pour votre projet"> -->
     <!-- <meta name="author" content="Votre nom ou le nom de votre organisation"> -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon-32x32.png">
     <title>My team</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="header_about">
         <nav>
             <a href="../index.html"><img src="../assets/logo/logo.svg" alt="logo"></a>
             <ul class="link_tablet_desktop">
@@ -29,7 +29,7 @@
             <button id="openMenuBurger"><img src="../assets/icon/icon-hamburger.svg" alt="open menu burger"></button>
             <aside id="menuBurger">
                 <div>
-                    <button id="closeMenuBurger"><img src="../assets/icon/icon-close.svg"
+                    <button id="closeMenuBurger"><img src="../assets/icon/icon-close-menu-burger.svg"
                             alt="close menu burger"></button>
                     <ul>
                         <li><a href="../index.html">home</a></li>
@@ -52,8 +52,49 @@
         </div>
     </header>
 
+    <main class="about">
+        <section class="directors">
+            <h2>Meet the directors</h2>
+            <div class="articles_directors">
+                <article>
+                    <div class="content_directors">
+                        <img class="profil" src="../assets/avatar/avatar-nikita.jpg" alt="Nikita Marks">
+                        <h3>Nikita Marks</h3>
+                        <em>Founder & CEO</em>
+                    </div>
+                    <div class="more_content_directors">
+                        <h3>Nikita Marks</h3>
+                        <p>“It always amazes me how much talent there is in every corner of the globe.”</p>
+                        <ul>
+                            <li><a href="#"><img class="link" src="../assets/icon/icon-twitter.svg" alt="Twitter"></a>
+                            </li>
+                            <li><a href="#"><img class="link" src="../assets/icon/icon-facebook.svg" alt="Facebook"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <input type="checkbox" id="checkbox_0"> -->
+                    <!-- <label for="checkbox_0"> -->
+                    <button id="moreInfo"><img class="more_info" src="../assets/icon/icon-cross.svg"
+                            alt="More info"></button>
+                    <!-- </label> -->
+                </article>
+            </div>
+        </section>
+
+        <section class="clients">
+            <h2>Some of our clients</h2>
+            <ul>
+                <li><img src="../assets/logo/logo-the-verge.png" alt="The verge"></li>
+                <li><img src="../assets/logo/logo-jakarta-post.png" alt="The jakarta post"></li>
+                <li><img src="../assets/logo/logo-the-guardian.png" alt="The guardian"></li>
+                <li><img src="../assets/logo/logo-tech-radar.png" alt="Tech radar"></li>
+                <li><img src="../assets/logo/logo-gadgets-now.png" alt="Gadgets now"></li>
+            </ul>
+        </section>
+    </main>
+
     <section class="started">
-        <h2>Ready to get<br>started?</h2>
+        <h2>Ready to get started?</h2>
         <a class="stateDark" href="pages/contact.html">contact us</a>
     </section>
 
@@ -73,15 +114,16 @@
         </div>
         <div>
             <ul class="reseaux">
-                <li><a href="#"><img src="../assets/icon/icon-facebook.svg" alt="Facebook"></a></li>
-                <li><a href="#"><img src="../assets/icon/icon-pinterest.svg" alt="Pinterest"></a></li>
-                <li><a href="#"><img src="../assets/icon/icon-twitter.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img class="link" src="../assets/icon/icon-facebook.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img class="link" src="../assets/icon/icon-pinterest.svg" alt="Pinterest"></a></li>
+                <li><a href="#"><img class="link" src="../assets/icon/icon-twitter.svg" alt="Twitter"></a></li>
             </ul>
             <p class="copyright">Copyright 2020. All Rights Reserved</p>
         </div>
     </footer>
 
     <script type="module" src="../js/menu-burger.js"></script>
+    <script type="module" src="../js/the-directors.js"></script>
 </body>
 
 </html>

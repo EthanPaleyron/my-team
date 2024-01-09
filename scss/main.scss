@@ -42,7 +42,6 @@ header {
     }
   }
   .header {
-    margin: 2rem 10% 6rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -58,11 +57,12 @@ header {
     .linePink {
       display: none;
     }
-    h3 {
-      color: $lightCoral;
-    }
   }
 }
+
+@import "home";
+@import "about";
+@import "contact";
 
 .started {
   padding: 5rem 15% 8rem;
@@ -117,10 +117,6 @@ footer {
       gap: 1rem;
       img {
         max-width: 2rem;
-        &:hover {
-          filter: brightness(0) saturate(100%) invert(81%) sepia(29%)
-            saturate(1865%) hue-rotate(304deg) brightness(95%) contrast(103%);
-        }
       }
     }
   }
@@ -147,6 +143,10 @@ footer {
       #openMenuBurger {
         display: none;
       }
+    }
+    .header {
+      margin: 3rem 15% 6rem;
+      gap: 1.5rem;
     }
   }
 
@@ -178,6 +178,7 @@ footer {
     .header {
       margin: 4rem;
       text-align: start;
+      margin: 3rem 15% 6rem;
       justify-content: space-between;
       align-items: start;
       flex-direction: row;
@@ -217,5 +218,3 @@ footer {
     }
   }
 }
-
-@import "home";

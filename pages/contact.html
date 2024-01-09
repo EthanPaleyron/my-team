@@ -8,7 +8,7 @@
     <!-- <meta name="description" content="Description de votre projet"> -->
     <!-- <meta name="keywords" content="Mots-clés pertinents pour votre projet"> -->
     <!-- <meta name="author" content="Votre nom ou le nom de votre organisation"> -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon-32x32.png">
     <title>My team</title>
 </head>
 
@@ -29,7 +29,7 @@
             <button id="openMenuBurger"><img src="../assets/icon/icon-hamburger.svg" alt="open menu burger"></button>
             <aside id="menuBurger">
                 <div>
-                    <button id="closeMenuBurger"><img src="../assets/icon/icon-close.svg"
+                    <button id="closeMenuBurger"><img src="../assets/icon/icon-close-menu-burger.svg"
                             alt="close menu burger"></button>
                     <ul>
                         <li><a href="../index.html">home</a></li>
@@ -42,12 +42,37 @@
         <div class="header">
             <div>
                 <h1>Contact</h1>
-                <div>
-                    <h3>Ask us about</h3>
-                </div>
             </div>
         </div>
     </header>
+
+    <main class="contact">
+        <section class="ask_us_about">
+            <h2>Ask us about</h2>
+            <ul>
+                <li><img src="../assets/icon/icon-person.svg" alt="Person">
+                    <p>The quality of our talent network</p>
+                </li>
+                <li><img src="../assets/icon/icon-cog.svg" alt="Cog">
+                    <p>Usage & implementation of our software</p>
+                </li>
+                <li><img src="../assets/icon/icon-chart.svg" alt="Chart">
+                    <p>How we help drive innovation</p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Company Name" required>
+                <input type="text" placeholder="Title" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </main>
 
     <footer>
         <div>
@@ -65,9 +90,9 @@
         </div>
         <div>
             <ul class="reseaux">
-                <li><a href="#"><img src="../assets/icon/icon-facebook.svg" alt="Facebook"></a></li>
-                <li><a href="#"><img src="../assets/icon/icon-pinterest.svg" alt="Pinterest"></a></li>
-                <li><a href="#"><img src="../assets/icon/icon-twitter.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img class="link" src="../assets/icon/icon-facebook.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img class="link" src="../assets/icon/icon-pinterest.svg" alt="Pinterest"></a></li>
+                <li><a href="#"><img class="link" src="../assets/icon/icon-twitter.svg" alt="Twitter"></a></li>
             </ul>
             <p class="copyright">Copyright 2020. All Rights Reserved</p>
         </div>
