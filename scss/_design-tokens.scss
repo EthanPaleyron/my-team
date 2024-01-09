@@ -138,3 +138,11 @@ a:hover {
   padding: 1.3rem;
   border-radius: 50%;
 }
+
+// 🔴Input selected
+.input_selected {
+  border-color: $lightCoral;
+  &::placeholder {
+    color: $lightCoral;
+  }
+}

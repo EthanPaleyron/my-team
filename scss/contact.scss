@@ -1,31 +1,31 @@
-.header {
-  margin: 3rem 10%;
-}
-
 main.contact {
+  margin: 4rem 0 0;
+  padding: 0 2rem;
+  background-image: none,
+    url("../assets/bg-pattern/contact/bg-pattern-contact-2.svg");
+  background-position: 0, bottom -100px right -100px;
   .ask_us_about {
-    @extend %flex-center;
+    display: flex;
     flex-direction: column;
+    text-align: center;
     h2 {
-      margin-bottom: 2rem;
+      margin: 2rem 0;
       color: $lightCoral;
     }
     ul {
-      margin-left: 5%;
       display: flex;
       flex-direction: column;
       gap: 1rem;
       li {
         display: flex;
         align-items: center;
+        gap: 1rem;
       }
     }
   }
 
   .form {
-    background-image: url("../assets/bg-pattern/contact/bg-pattern-contact-2.svg");
-    background-position: bottom right -100px;
-    padding: 3rem 2rem 13rem;
+    padding: 3rem 0 6rem;
     form {
       display: flex;
       flex-direction: column;
@@ -38,10 +38,16 @@ main.contact {
         background-color: transparent;
         border: none;
         border-bottom: solid $w;
-      }
-      input:required,
-      textarea:required {
-        border-color: red;
+        &::placeholder {
+          opacity: 0.5;
+          color: $w;
+        }
+        &:focus {
+          border-color: $raptureBlue;
+          &::placeholder {
+            opacity: 1;
+          }
+        }
       }
       button {
         width: fit-content;
@@ -51,6 +57,17 @@ main.contact {
         padding: 1rem 2rem;
         border-radius: 3rem;
       }
+    }
+  }
+}
+
+@include responsive(768px) {
+  main.contact {
+    padding: 0 8rem;
+    background-image: url("../assets/bg-pattern/about/bg-pattern-about-2-contact-1.svg"),
+      url("../assets/bg-pattern/contact/bg-pattern-contact-2.svg");
+    background-position: top left -100px, bottom right -100px;
+    .ask_us_about {
     }
   }
 }

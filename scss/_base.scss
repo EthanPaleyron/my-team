@@ -55,6 +55,9 @@ td {
   border: solid;
   border-collapse: collapse;
 }
+textarea {
+  resize: none;
+}
 input:focus,
 textarea:focus {
   outline: none;
