@@ -8,3 +8,9 @@ openMenuBurger.addEventListener("click", () => {
 closeMenuBurger.addEventListener("click", () => {
   menuBurger.style.display = "none";
 });
+
+addEventListener("resize", () => {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    menuBurger.style.display = "none";
+  }
+});

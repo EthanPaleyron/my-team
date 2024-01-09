@@ -1,5 +1,5 @@
 // 🔴font-family
-@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap");
 
 // 🔴Colors
 $midnightGreen: #014e56;
@@ -19,16 +19,13 @@ body {
   color: $w;
   background-color: $midnightGreen;
 }
-a:hover {
-  color: $lightCoral;
-}
 
 // 🔴Texts sizes
 h1 {
   font-family: Livvic;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 3.5rem;
+  line-height: 3rem;
 }
 h2 {
   font-family: Livvic;
@@ -38,9 +35,9 @@ h2 {
 }
 h3 {
   font-family: Livvic;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
 }
 p {
   font-family: Livvic;
@@ -48,8 +45,27 @@ p {
   font-weight: 600;
   line-height: 1.5rem;
 }
+@include responsive(768px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+@include responsive(1040px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+  }
+}
 
 // 🔴Buttons
+a:hover {
+  color: $lightCoral;
+}
 %button {
   font-size: 1rem;
   font-weight: bold;
