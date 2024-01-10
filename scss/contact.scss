@@ -1,5 +1,4 @@
 main.contact {
-  margin: 4rem 0 0;
   padding: 0 2rem;
   background-image: none,
     url("../assets/bg-pattern/contact/bg-pattern-contact-2.svg");
@@ -48,8 +47,18 @@ main.contact {
             opacity: 1;
           }
         }
+        // &:required:invalid,
+        // [pattern]:focus:invalid {
+        //   border-color: red;
+        // }
+      }
+      textarea {
+        height: 5rem;
+        overflow: hidden;
+        @extend %ellipsis;
       }
       button {
+        font-size: 1.1rem;
         width: fit-content;
         color: $b;
         font-weight: bold;
@@ -63,11 +72,30 @@ main.contact {
 
 @include responsive(768px) {
   main.contact {
-    padding: 0 8rem;
+    padding: 0 9rem;
     background-image: url("../assets/bg-pattern/about/bg-pattern-about-2-contact-1.svg"),
       url("../assets/bg-pattern/contact/bg-pattern-contact-2.svg");
     background-position: top left -100px, bottom right -100px;
+  }
+}
+
+@include responsive(1040px) {
+  main.contact {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 8rem 0;
     .ask_us_about {
+      margin-top: 2.5rem;
+      text-align: start;
+    }
+    .form {
+      padding: 0;
+      width: 40%;
+      button {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
     }
   }
 }

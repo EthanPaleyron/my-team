@@ -7,7 +7,7 @@ header {
   justify-content: center;
   flex-direction: column;
   nav {
-    margin: 3rem 6% 0;
+    margin: 3rem 6% 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +41,8 @@ header {
       }
     }
   }
-  .header {
+  .top_of_pages {
+    margin: 0 5%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -125,6 +126,7 @@ footer {
 @include responsive(768px) {
   header {
     nav {
+      margin: 3rem 6% 4.5rem;
       display: flex;
       justify-content: start;
       align-items: center;
@@ -144,7 +146,8 @@ footer {
         display: none;
       }
     }
-    .header {
+    .top_of_pages {
+      margin: 0 18%;
       gap: 1.5rem;
     }
   }
@@ -174,8 +177,10 @@ footer {
 
 @include responsive(1040px) {
   header {
-    .header {
-      margin: 4rem;
+    nav {
+      margin: 3rem 6% 6.5rem;
+    }
+    .top_of_pages {
       text-align: start;
       justify-content: space-between;
       align-items: start;

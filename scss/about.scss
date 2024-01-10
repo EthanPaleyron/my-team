@@ -1,7 +1,9 @@
 .header_about {
-  padding-bottom: 3rem;
   background-image: url("../assets/bg-pattern/bg-pattern-about-1-mobile-nav-1.svg");
   background-position: bottom -100px right -100px;
+  .top_of_pages_about {
+    padding-bottom: 7rem;
+  }
 }
 
 main.about {
@@ -94,6 +96,13 @@ main.about {
 }
 
 @include responsive(768px) {
+  .header_about {
+    background-image: url("../assets/bg-pattern/bg-pattern-about-1-mobile-nav-1.svg");
+    background-position: bottom right -100px;
+    .top_of_pages_about {
+      padding-bottom: 8rem;
+    }
+  }
   main.about {
     .directors {
       .articles_directors {

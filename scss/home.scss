@@ -2,6 +2,9 @@
   padding-bottom: 5rem;
   background-image: url("../assets/bg-pattern/home/bg-pattern-home-2.svg");
   background-position: bottom center;
+  .top_of_pages_home {
+    padding-bottom: 7.5rem;
+  }
 }
 
 main.home {
@@ -80,6 +83,11 @@ main.home {
 }
 
 @include responsive(768px) {
+  .header_home {
+    .top_of_pages_home {
+      padding-bottom: 9rem;
+    }
+  }
   main.home {
     .build_manager {
       padding: 5rem 7rem;
@@ -101,9 +109,10 @@ main.home {
 
 @include responsive(1040px) {
   .header_home {
-    background-image: url("../assets/bg-pattern/home/bg-pattern-home-1.svg");
-    background-position: -100px;
-    .header {
+    background-image: url("../assets/bg-pattern/home/bg-pattern-home-2.svg"),
+      url("../assets/bg-pattern/home/bg-pattern-home-1.svg");
+    background-position: bottom right 160px, -100px;
+    .top_of_pages {
       margin-left: 15%;
     }
   }
