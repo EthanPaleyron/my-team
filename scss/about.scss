@@ -27,6 +27,7 @@ main.about {
         width: 20rem;
         height: 14.5rem;
         %content_directors {
+          height: 15rem;
           padding: 2rem 3rem 3.5rem;
           @extend %flex-center;
           flex-direction: column;
@@ -40,7 +41,7 @@ main.about {
           display: none;
           background-color: $b;
           @extend %content_directors;
-          gap: 1.5rem;
+          gap: 1rem;
           ul {
             @extend %flex-center;
             gap: 1rem;
