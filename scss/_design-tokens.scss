@@ -18,6 +18,10 @@ body {
   font-family: "Livvic", sans-serif;
   color: $w;
   background-color: $midnightGreen;
+  // pour mettre le footer en bas de pages
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 // 🔴Texts sizes

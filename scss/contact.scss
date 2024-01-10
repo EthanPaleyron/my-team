@@ -28,7 +28,6 @@ main.contact {
     form {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
       input,
       textarea {
         @extend %ellipsis;
@@ -36,7 +35,7 @@ main.contact {
         height: 4rem;
         background-color: transparent;
         border: none;
-        border-bottom: solid $w;
+        border-bottom: solid $w 3px;
         &::placeholder {
           opacity: 0.5;
           color: $w;
@@ -47,17 +46,30 @@ main.contact {
             opacity: 1;
           }
         }
-        // &:required:invalid,
-        // [pattern]:focus:invalid {
-        //   border-color: red;
-        // }
+        &:user-invalid {
+          border-color: $lightCoral;
+          &::placeholder {
+            opacity: 0.8;
+            color: $lightCoral;
+          }
+          & + small {
+            display: block;
+          }
+        }
+      }
+      small {
+        margin: 0.2rem 0 0 0.7rem;
+        color: $lightCoral;
+        display: none;
       }
       textarea {
+        margin-top: 0.5rem;
         height: 5rem;
         overflow: hidden;
         @extend %ellipsis;
       }
       button {
+        margin-top: 2rem;
         font-size: 1.1rem;
         width: fit-content;
         color: $b;
@@ -81,12 +93,12 @@ main.contact {
 
 @include responsive(1040px) {
   main.contact {
+    padding: 0 9rem 6rem;
     display: flex;
     align-items: start;
     justify-content: space-between;
-    margin: 8rem 0;
     .ask_us_about {
-      margin-top: 2.5rem;
+      margin-top: 1.5rem;
       text-align: start;
     }
     .form {
