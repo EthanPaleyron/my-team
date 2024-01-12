@@ -1,6 +1,6 @@
 .header_about {
   background-image: url("../assets/bg-pattern/bg-pattern-about-1-mobile-nav-1.svg");
-  background-position: bottom -100px right -100px;
+  background-position: bottom -6.25rem right -6.25rem;
   .top_of_pages_about {
     padding-bottom: 7rem;
   }
@@ -13,7 +13,7 @@ main.about {
     padding: 10rem 1.5rem;
     background-image: url("../assets/bg-pattern/about/bg-pattern-about-2-contact-1.svg"),
       url("../assets/bg-pattern/home/bg-pattern-home-4-about-3.svg");
-    background-position: top left -100px, bottom right;
+    background-position: top left -6.25rem, bottom right;
     h2 {
       margin-bottom: 2.5rem;
     }
@@ -81,7 +81,7 @@ main.about {
     background-color: $sacramentoStateGreen;
     padding: 5rem;
     background-image: url("../assets/bg-pattern/about/bg-pattern-about-4.svg");
-    background-position: top -100px left -100px;
+    background-position: top -6.25rem left -6.25rem;
     h2 {
       margin-bottom: 4rem;
     }
@@ -99,7 +99,7 @@ main.about {
 @include responsive(768px) {
   .header_about {
     background-image: url("../assets/bg-pattern/bg-pattern-about-1-mobile-nav-1.svg");
-    background-position: bottom right -100px;
+    background-position: bottom right -6.25rem;
     .top_of_pages_about {
       padding-bottom: 8rem;
     }
@@ -112,7 +112,7 @@ main.about {
     }
     .clients {
       padding: 8rem 5rem;
-      background-position: top -100px left;
+      background-position: top -6.25rem left;
       ul {
         flex-direction: row;
         li img {

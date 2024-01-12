@@ -12,7 +12,7 @@ main.home {
     background-color: $sacramentoStateGreen;
     padding: 3rem 1rem 5rem;
     background-image: url("../assets/bg-pattern/home/bg-pattern-home-3.svg");
-    background-position: top 0 right -100px;
+    background-position: top 0 right -6.25rem;
     .linePink {
       margin-bottom: 2.5rem;
     }
@@ -111,7 +111,7 @@ main.home {
   .header_home {
     background-image: url("../assets/bg-pattern/home/bg-pattern-home-2.svg"),
       url("../assets/bg-pattern/home/bg-pattern-home-1.svg");
-    background-position: bottom right 160px, -100px;
+    background-position: bottom right 10rem, -6.25rem;
     .top_of_pages {
       margin-left: 15%;
     }
@@ -120,7 +120,7 @@ main.home {
   main.home {
     .build_manager {
       padding: 7rem 9rem;
-      background-position: bottom 0 right -100px;
+      background-position: bottom 0 right -6.25rem;
       display: flex;
       .linePink {
         margin-bottom: 4rem;

@@ -2,7 +2,7 @@ main.contact {
   padding: 0 2rem;
   background-image: none,
     url("../assets/bg-pattern/contact/bg-pattern-contact-2.svg");
-  background-position: 0, bottom -100px right -100px;
+  background-position: 0, bottom -6.25rem right -6.25rem;
   .ask_us_about {
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ main.contact {
         height: 4rem;
         background-color: transparent;
         border: none;
-        border-bottom: solid $w 3px;
+        border-bottom: solid $w 0.188rem;
         &::placeholder {
           opacity: 0.5;
           color: $w;
@@ -87,7 +87,7 @@ main.contact {
     padding: 0 9rem;
     background-image: url("../assets/bg-pattern/about/bg-pattern-about-2-contact-1.svg"),
       url("../assets/bg-pattern/contact/bg-pattern-contact-2.svg");
-    background-position: top left -100px, bottom right -100px;
+    background-position: top left -6.25rem, bottom right -6.25rem;
   }
 }
 
